@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <!-- Ocupa todo el ancho, toda la altura, orientación vertical y espacio de 16 entre los elementos -->
+
+    <EditText
+        android:id="@+id/itemInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Añadir elemento" />
+
+    <!-- Entrada de texto para el ítem -->
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Añadir" />
+
+    <!-- Botón para añadir elementos -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+    <!-- RecyclerView con un peso 1 para que ocupe el espacio restante -->
+
+    <Button
+        android:id="@+id/openCalculatorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir Calculadora"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center" />
+    <!-- Botón para abrir la calculadora -->
+
+</LinearLayout>

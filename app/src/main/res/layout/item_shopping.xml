@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp">
+    <!--Ocupará todo el ancho y toda la altura del contenedor padre (esto el la lista), estará en posición horizontal y con separación de 8 entre elementos-->
+
+    <!-- Nombre del producto -->
+    <TextView
+        android:id="@+id/itemName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Nombre del producto"
+        android:textSize="16sp" />
+    <!--Se utiliza para mostrar texto (los elementos de la lista), le damos un nombre para manipularlo, el valor pondrá el ancho, el ancho será el mismo para todos, texto predefinido, el tamaño del texto en la etiqueta-->
+
+    <!-- Campo para la cantidad -->
+    <EditText
+        android:id="@+id/itemQuantity"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:inputType="number"
+        android:hint="Cantidad"
+        android:text="1" />
+
+    <!-- Botón para eliminar -->
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eliminar" />
+
+    <!--Le damos un nombre al boton, tendrá un ancho y largo que depende del texto predefinido -->
+
+</LinearLayout>
